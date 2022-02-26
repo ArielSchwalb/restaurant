@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="../restaurant/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <!-- This is the image for the logo picture. -->
+                <a href="index.html"><img src="img/ariel's.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                     <!-- This is for the x icon from Font Awesome. -->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <!-- This is the navigation bar. -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                 <!-- This is for the bar icon from Font Awesome. -->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <div class="text-box">
+                <h1>About Us</h1>
+                <p>Serving our communities since 2022.</p>
+            <!-- This is for the "Visit Us to Know More" botton. -->
+                <a href="contact.html" class="hero-btn">Find Us on Google Maps</a>
+            </div>
+        </section>
+        
+        <!-------- About Us Content -------->
+
+        <section class="about-us">
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>How the Journey Started...</h1>
+                    <p> In January of 2022, a few friends got together for dinner and started making some plans. 
+                        While there were a ton of vegan cafes in Tel Aviv, few, if any, 
+                        were focused on international cuisine, and almost no restaurant had any connection to restaurants in the Arab community
+                        outside of Israel. That's when Ariel's vegan cafe was born. Ariel's cafe is committed to serving both kosher and 
+                        Halal food. We operate throughout the Middle East. We hope to bring everyone together over everyone's favorite thing... food!
+                    </p>
+                        <a href="" class="hero-btn red-btn">Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="img/about.jpg" alt="about">
+                </div>
+        </section>
+       
+        <!-------- Footer -------->
+        
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Ariel's vegan cafe&copy; is a licensed restaurant business currently operating in Israel, UAE, and Qatar. 
+            We specialize in crafting vegan and vegetarian cusine. All menu items are kosher and halal.</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class='fab fa-instagram'></i>
+                <i class='fab fa-linkedin'></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Ariel Schwalb</p>
+        </section>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body> 
+</html>

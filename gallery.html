@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="../restaurant/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 33.33%;
+        height: 50%;
+        padding: 5px;   
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    </style>
+
+</head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <!-- This is the image for the logo picture. -->
+                <a href="index.html"><img src="img/ariel's.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                     <!-- This is for the x icon from Font Awesome. -->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <!-- This is the navigation bar. -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gsllery.html">GALLERY</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                 <!-- This is for the bar icon from Font Awesome. -->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <div class="text-box">
+                <h1>Our Gallery</h1>
+                <p>Scroll down to see our dishes.</p>
+            <!-- This is for the "Visit Us to Know More" botton. -->
+                <a href="contact.html" class="hero-btn">Find Us on Google Maps</a>
+            </div>
+        </section>
+        
+            
+        </section>
+        
+        <!-------- Meal Content -------->
+
+            
+    <section class="gallery">
+        <div class="row">
+            <div class="column">
+              <img src="img/burger.jfif" alt="Burger" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/falafel.jfif" alt="Falafel" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/soup.jfif" alt="Soup" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img src="img/sushi.jfif" alt="Sushi" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/pizza.jfif" alt="Pizza" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/pancakes.jfif" alt="Pancakes" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img src="img/pasta.jpg" alt="Pasta" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/guac.jpeg" alt="Guac" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/salad.jfif" alt="Salad" style="width:100%">
+            </div>
+          </div>
+    </section>
+            
+
+       
+        <!-------- Footer -------->
+        
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Ariel's vegan cafe&copy; is a licensed restaurant business currently operating in Israel, UAE, and Qatar.
+            We specialize in crafting vegan and vegetarian cusine. All menu items are kosher and halal.</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class='fab fa-instagram'></i>
+                <i class='fab fa-linkedin'></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Ariel Schwalb</p>
+        </section>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body> 
+</html>
