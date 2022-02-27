@@ -370,16 +370,17 @@ h3 {
 }
 
 .footer h4 {
-    margin-bottom: 25px;
-    margin: 20px;
+    margin: auto;
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;   
+    font-size: 30px;   
 }
 
 .footer p {
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     line-height: normal;
+    margin: auto;
+    padding: auto;
 }
 
 .icons .fab {
@@ -388,6 +389,7 @@ h3 {
     cursor: pointer;
     padding: 18px 0;
     font-size: 40px;
+    text-decoration: none;
 }
 
 .fa-heart {
@@ -481,7 +483,8 @@ h3 {
 
 .menu-col {
     line-height: normal;
-    margin: 10px 10px 10px 10px;
+    margin: auto;
+    padding: auto;
 }
 
 
@@ -491,7 +494,13 @@ h3 {
     margin: auto;
 }
 
+.menu-click {
+    font-size: 24px;
+}
 
+#breakfast, #beverages, #lunch, #dinner {
+    color: purple;
+}
 
 /* ------- Comments --------*/
 
@@ -572,7 +581,6 @@ h3 {
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
-
 }
 
 /* ------- Media Query --------*/
@@ -587,6 +595,10 @@ h3 {
 }
     .cta h1 {
         font-size: 24px;
+    }
+
+    p{
+        line-height: normal;
     }
 }
 
