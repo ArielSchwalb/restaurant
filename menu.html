@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
+
+<div class="canvas">
 <script type="text/javascript">
     function setup() {
         var canvas = document.getElementById('lessonCanvas');
@@ -16,7 +17,7 @@
             var ctx = canvas.getContext('2d');
 
             // canvas outline 
-            ctx.strokeRect(0, 0, 300, 300);
+            ctx.strokeRect(0, 0, 0, 0);
             ctx.fillStyle = 'gray';
 
             // shadow
@@ -81,6 +82,7 @@
     }   
 
 </script>
+</div>
 
 
 

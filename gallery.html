@@ -25,6 +25,10 @@
         display: table;
     }
     </style>
+  
+</script>
+  
+</script>
 
 </head>
     <body>
@@ -56,7 +60,7 @@
                 <h1>Our Gallery</h1>
                 <p>Scroll down to see our dishes.</p>
             <!-- This is for the "Visit Us to Know More" botton. -->
-                <a href="contact.html" class="hero-btn">Find Us on Google Maps</a>
+                <a href="map.html" class="hero-btn">Find Us on Google Maps</a>
             </div>
         </section>
         
@@ -69,37 +73,47 @@
     <section class="gallery">
         <div class="row">
             <div class="column">
-              <img src="img/burger.jfif" alt="Burger" style="width:100%">
+              <img src="img/burger.jfif" onmouseover="this.src='img/burgerrecipe.jpg'" onmouseout="this.src='img/burger.jfif'" 
+              width="440px" height="425px" />
             </div>
             <div class="column">
-              <img src="img/falafel.jfif" alt="Falafel" style="width:100%">
+          <!--   <img src="img/falafel.jfif" alt="Falafel" style="width:100%"> -->
+          <img src="img/falafel.jfif" onmouseover="this.src='img/chickpeas.jpg'" onmouseout="this.src='img/falafel.jfif'" 
+              width="440px" height="425px" />
             </div>
             <div class="column">
-              <img src="img/soup.jfif" alt="Soup" style="width:100%">
+              <img src="img/soup.jfif" onmouseover="this.src='img/souprecipe.jpg'" onmouseout="this.src='img/soup.jfif'" 
+              width="440px" height="425px" />
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="column">
+              <img src="img/sushi.jfif" onmouseover="this.src='img/sushirecipe.jpg'" onmouseout="this.src='img/sushi.jfif'" 
+              width="440px" height="425px" />
+            </div>
+            <div class="column">
+              <img src="img/pizza.jfif" onmouseover="this.src='img/pizzarecipe.jpg'" onmouseout="this.src='img/pizza.jfif'" 
+              width="440px" height="425px" />
+            </div>
+            <div class="column">
+              <img src="img/pancakes.jfif" onmouseover="this.src='img/pancakerecipe.jpg'" onmouseout="this.src='img/pancakes.jfif'" 
+              width="440px" height="425px" />
             </div>
           </div>
 
           <div class="row">
             <div class="column">
-              <img src="img/sushi.jfif" alt="Sushi" style="width:100%">
+              <img src="img/pasta.jpg" onmouseover="this.src='img/pastarecipe.jpg'" onmouseout="this.src='img/pasta.jpg'" 
+              width="440px" height="425px" />
             </div>
             <div class="column">
-              <img src="img/pizza.jfif" alt="Pizza" style="width:100%">
+              <img src="img/guac.jpeg" onmouseover="this.src='img/avocadorecipe.jpg'" onmouseout="this.src='img/guac.jpeg'" 
+              width="440px" height="425px" />
             </div>
             <div class="column">
-              <img src="img/pancakes.jfif" alt="Pancakes" style="width:100%">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="column">
-              <img src="img/pasta.jpg" alt="Pasta" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="img/guac.jpeg" alt="Guac" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="img/salad.jfif" alt="Salad" style="width:100%">
+              <img src="img/salad.jfif" onmouseover="this.src='img/figrecipe.jpg'" onmouseout="this.src='img/salad.jfif'" 
+              width="440px" height="425px" />
             </div>
           </div>
     </section>
